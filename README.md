@@ -5,7 +5,7 @@
 ## 2. load the image:
 `docker load --input [your directory]`
 ## 3. run an image:
-`docker run --gpus all -it [Image ID]`
+`docker run --shm-size 32gb --gpus all -it [Image ID]`
 * Note: use `docker images` to find image ID.
 ## 4. commit changes:
 `docker commit [Container ID] [Saving name]`
